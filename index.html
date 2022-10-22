@@ -1,212 +1,488 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <!--<title>UBC | ECE</title>-->
   <title>Tahsin Reza | Parallel and Distributed Computing</title>
   <style>
+
     body {
       /*font: 12px Arial, sans-serif;*/
       font-family: "Open Sans";
-      font-size: 13px; 
+      font-size: 14px; 
       font-style: normal;	
-      /*line-height: 1.5;*/	
+      /*line-height: 1.5;*/
+      margin: 0 8% 8% 8%;	
+    }
+
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    /*b {
+      font-weight: normal;
+      text-decoration: underline;      
+    }*/
+
+    /*hr {
+      margin: 16px 0 16px 0;
+    }*/    
+
+    a:link, a:visited {
+      color: blue;
+      text-decoration: none;
     } 
+
+    a:hover, a:active {
+      text-decoration: underline;
+    }
+
+    .menu_bar {
+      background: white;
+      font-size: medium; 
+      text-align: center; 
+      margin: 16px 0 0 0;
+      top: 0;
+      /*position: fixed;*/      
+      position: -webkit-sticky;
+      position: sticky;
+    }  
+
+    .menu_item {
+      /*padding: 32px;*/
+      margin: 0 3% 0 3%;
+      /*margin: 0 16px 0 16px;*/
+    }      
+
+    .section_title {
+      font-size: x-large;    
+      font-weight: normal;
+      font-variant: small-caps;
+      margin: 0 0 0 0;
+    }
+
+    .subsection_title {
+      font-size: medium;    
+      font-weight: bold;
+      margin: 16px 0 0 0;
+    }
+
+    .subsubsection_title {
+      font-size: normal;    
+      font-weight: bold;
+      margin: 16px 0 0 0;
+    }
+
+    .font_color_red {
+      color: red;        
+    }
+
+    .font_color_blue {
+      color: blue;        
+    }
+
   </style> 
 </head>
 <body>
-  <p>
-     <div><b>Tahsin Reza</b></div>
-     <div>Email: treza[at]ece.ubc.ca | <a href=https://github.com/tahsinreza>GitHub</a></div>
-  </p> 
+
+<hr id="home" style="margin: 0 0 0 0; border: none;">  
   
-  <!--<p><div><b>Research Interests</b></div></p>-->
-  <!--<p>-->
-    <!--<div>Parallel and Distributed Computing, Big Data Acceleration</div>
-    <div>GPGPU Applications, Non-volatile Memory-based Systems</div>
-    <div>Computer Networks, Self-organizing, Infrastructure-less Networks</dir>
-    <div>Mobile Communications, Multimedia Communications</div>-->
-    <!--<div>Parallel and Distributed Computing, Large-scale Processing</div>
-    <div>HPC, GPU and Accelerators, Scalable Deep Learning Systems</div>
-    <div>High-perfromnace, Self-organizing and Infrastructureless Networks</dir>
-    <div>Intelligent Transportation, Vehicle-to-Vehicle (V2V) Infrastructure</div>
-  </p>-->
+<div style="font-size: xx-large; font-weight: normal; text-align: center; padding: 8px">Tahsin Reza</div>
+<div style="text-align: center;">
+  <a href="mailto:treza@ece.ubc.ca">Email</a>
+  <!--<a href="treza@ece.ubc.ca">treza[at]ece.ubc.ca</a>-->
+  <!--<span> &#9632; </span>--> 
+  <span> | </span>
+  <a target="_blank" rel="noopener noreferrer" href=https://github.com/tahsinreza>GitHub</a>
+</div>
+<div class="menu_bar">
+  <a class="menu_item" href="index.html#home">Home</a> 
+  <a class="menu_item" href="index.html#education_all">Education</a>
+  <a class="menu_item" href="index.html#awards_honors">Awards and Honors</a>
+  <a class="menu_item" href="index.html#self_publication_all">Publications</a> 
+  <!--<a class="menu_item" href="index.html#research_appointments">Research Appointments</a>--> 
+  <a class="menu_item" href="index.html#research_projects">Projects</a>
+  <hr style="margin: 16px 0 16px 0; border: none; border-top: 1px solid silver;"> 
+</div>
+  
+<!--<p><div><b>Research Interests</b></div></p>-->
+<!--<p>-->
+  <!--<div>Parallel and Distributed Computing, Big Data Acceleration</div>
+  <div>GPGPU Applications, Non-volatile Memory-based Systems</div>
+  <div>Computer Networks, Self-organizing, Infrastructure-less Networks</dir>
+  <div>Mobile Communications, Multimedia Communications</div>-->
+  <!--<div>Parallel and Distributed Computing, Large-scale Processing</div>
+  <div>HPC, GPU and Accelerators, Scalable Deep Learning Systems</div>
+  <div>High-performance, Self-organizing and Infrastructureless Networks</dir>
+  <div>Intelligent Transportation, Vehicle-to-Vehicle (V2V) Infrastructure</div>
+</p>-->
  
-  <div> 
+<div> 
   <p>
   My research interests are in the area of parallel and distributed computing. I am interested in investigating novel systems techniques for emerging Big data problems that demand scalable and timely solution. My focus is building performant and scalable yet sustainable systems, to support these problems, that harness state-of-the-art massively parallel and large computing platforms, distributed communication, and memory technologies. 
   </p> 
-  </div>  
+</div>     
 
-  <p><div><b>Recent Projects</b></div></p>
-  <p>
-    <!--<p>[1] Distributed subgraph pattren matching <br/> (in collaboration with <a href="https://computation.llnl.gov/casc/">Center for Applied Scientific Computing, Lawrence Livermore National Laboratory</a>).-->
-    <p>[1] Accelerating Neural Architecture Search by analysing computational graphs.</p>
-    <p>[2] Distributed communication beyond MPI.</p>
-    <p>[3] Graph analysis of the <a href="https://spoke.ucsf.edu/">SPOKE</a> knowledge network.</p>
-    <p>[4] Distributed Steiner Tree, connection subgraph computation.</p>
-    <p>[5] Distributed subgraph queries on property graphs.</p> 
-    <p>[6] Graph Neural Network for learning subgraphs.</p> 
-    <p>[7] Distributed subgraph matching (in collaboration with <a href="https://computation.llnl.gov/casc/">CASC, LLNL</a>) 
-    <a href="https://github.com/LLNL/havoqgt/tree/develop_prunejuice/examples/prunejuice">GitHub</a></p>
-    <p>[8] Accelerating kernels in the radar-satellite image processing chain (in collaboration with <a href="http://www.3vgeomatics.com/">3vGeomatics</a>).</p> 
-    <p>[9] <a href="http://netsyslab.ece.ubc.ca/wiki/index.php/Totem">Totem</a> - A graph-processing framework that leverages CPU-GPU hybrid platforms. 
-    <a href="https://github.com/netsyslab/Totem">GitHub</a></p> 
-    <!--<p>[4] DRAM-NVM hybrid-memory systems for massive-scale graph-processing.</p>-->    
-  </p> 
+<hr id="education_all" style="margin: 32px 0 32px 0; border: none;">
 
-	<p><div><b>Education</b></div></p>
-	<p>		
-		<div>Doctor of Philosophy (PhD) </div>	
-		<div>Electrical and Computer Engineering</div>
-                <div>Advisor: <a href="http://www.ece.ubc.ca/~matei/">Professor Matei Ripeanu</a></div> 
-		<div><b>The University of British Columbia</b></div>
-		<div>Vancouver, British Columbia</div>
-                <div>
-			<!--<a href="https://drive.google.com/file/d/1JqerK7t6aquV9LHhP_waRf7cYXVv6U-w/view?usp=sharing">Thesis: Pattern Matching in Massive Metadata Graphs at Scale</a>-->
-			<a href="https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0387453">Thesis: Pattern Matching in Massive Metadata Graphs at Scale</a>
-		</div>
-	</p>
+<div id="" class="section_title">Education</div>
+<p>		
+	<div><b>Doctor of Philosophy (PhD)</b></div>	
+	<div>Electrical and Computer Engineering</div>               
+	<div><a target="_blank" rel="noopener noreferrer" href="https://www.ubc.ca/">The University of British Columbia</a></div>
+	<!--<div>Vancouver, British Columbia</div>-->
+  <div>Dissertation -  
+  <!--<a href="https://drive.google.com/file/d/1JqerK7t6aquV9LHhP_waRf7cYXVv6U-w/view?usp=sharing">Thesis: Pattern Matching in Massive Metadata Graphs at Scale</a>-->
+  <a target="_blank" rel="noopener noreferrer" href="https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0387453">Pattern Matching in Massive Metadata Graphs at Scale</a></div>
+  <div>Advisor - <a target="_blank" rel="noopener noreferrer" href="http://www.ece.ubc.ca/~matei/">Professor Matei Ripeanu</a></div>	
+</p>
 
-	<p>
-		<div>Master of Computer Science (MCS)</div>
-    <div>Advisor: <a href="https://carleton.ca/scs/people/michel-barbeau/">Professor Michel Barbeau</a></div>
-		<!--<div>School of Computer Science</div>-->
-		<div><b>Carleton University</b></div>
-		<div>Ottawa, Ontario</div>
-    <div>
-	<!--<a href="https://drive.google.com/file/d/0B62g_9gWmpsZb1pHeHZEYVhqZXM/view?usp=sharing">Thesis: QoS-aware Adaptive Security Scheme for Video Streaming in MANETs</a>-->
-	<a href="https://curve.carleton.ca/6c08b1c7-04fc-414c-af91-185713332c10">Thesis: QoS-aware Adaptive Security Scheme for Video Streaming in MANETs</a>
-    </div> 
-	</p>
-	
-	<p>
-		<div>Bachelor of Science (BSc)</div>
-		<div>Major - Computer Science</div>
-		<!--<div>Department of Computer Science</div>-->
-		<div><b>Memorial University of Newfoundland</b></div>
-		<div>St. John's, Newfoundland and Labrador</div>
-	</p>
+<p>
+	<div><b>Master of Computer Science (MCS)</b></div>  
+	<!--<div>School of Computer Science</div>-->
+	<div><a target="_blank" rel="noopener noreferrer" href="https://carleton.ca/">Carleton University</a></div>
+	<!--<div>Ottawa, Ontario</div>--> 
+  <div>Dissertation -   
+  <!--<a href="https://drive.google.com/file/d/0B62g_9gWmpsZb1pHeHZEYVhqZXM/view?usp=sharing">Thesis: QoS-aware Adaptive Security Scheme for Video Streaming in MANETs</a>-->
+  <a target="_blank" rel="noopener noreferrer" href="https://curve.carleton.ca/6c08b1c7-04fc-414c-af91-185713332c10">QoS-aware Adaptive Security Scheme for Video Streaming in MANETs</a></div> 
+  <div>Advisor - <a target="_blank" rel="noopener noreferrer" href="https://carleton.ca/scs/people/michel-barbeau/">Professor Michel Barbeau</a></div>
+</p>
 
-    <p><div><b>Awards</b></div></p>
-    <p>
-    [1] <a href="https://www.nserc-crsng.gc.ca/Students-Etudiants/PD-NP/PDF-BP_eng.asp">NSERC Postdoctoral Fellowship</a>
-    </p> 
+<p>
+	<div><b>Bachelor of Science (BSc)</b></div>
+	<div>Computer Science</div>
+	<!--<div>Department of Computer Science</div>-->
+	<div><a target="_blank" rel="noopener noreferrer" href="https://mun.ca/">Memorial University of Newfoundland</a></div>
+	<!--<div>St. John's, Newfoundland and Labrador</div>-->
+</p>
 
-    <p><div><b>Publications</b>
-      <a href="http://netsyslab.ece.ubc.ca/wiki/index.php/Publications">(UBC, ECE, NetSysLab)</a>  
-      <a href="https://scholar.google.com/citations?user=OMgANTcAAAAJ&hl=en">(Google Scholar)</a> 
-    </div></p>
- 
-    <p><div><u>Journal</u></div></p>
-    <p>     
-      <p>
-      [4] <b>Reza, T.</b>, Steil, T., Sanders, G., and Pearce, R. Distributed Approximate Minimal Steiner Trees with Millions of Seed Vertices on Billion-Edge Graphs. The Journal of Parallel and Distributed Computing (<b>JPDC</b>), Elsevier B.V. (Submitted August, 2022.) 
-      </p>
-      <p>
-      [3] <b>Reza, T.</b>, Halawa, H., Ripeanu, M., Sanders, G., and Pearce, R. Scalable Pattern Matching in Metadata Graphs via Constraint Checking. ACM Transactions on Parallel Computing (<b>TOPC</b>), 8(1), April, 2021. (Submitted November, 2018. Accepted August, 2020.)
-      </p> 
-      <p>
-      [2] <b>Reza, T.</b>, Zimmer, A., Delgado Blasco, J., Ghuman, P., Aasawat, T. and Ripeanu, M. PtSel: Accelerating Persistent Scatterer Pixel Selection for InSAR Processing. IEEE Transaction on Parallel and Distributed Systems (<b>TPDS</b>), 29(1), 16 - 30, January, 2018. (Accepted May, 2017.)  
-      </p>
-      <p>  
-      [1] <b>Reza, T.</b> and Barbeau, M. QaASs: QoS Aware Adaptive Security Scheme for Video Streaming in MANETs. Journal of Information Security and Applications (JISA), 18(1), 68 – 82, July, 2013, Elsevier Ltd.
-      </p>      
-    </p>     
-    
-    <p><div><u>Conference</u></div></p>
-      <p>
-      [10] <b>Reza, T.</b>, Sanders, G., and Pearce, R. Towards Distributed 2-Approximation Steiner Minimal Trees in Billion-edge Graphs. In Proceedings of The 36th IEEE International Parallel and Distributed Processing Symposium (<b>IPDPS’22</b>), Lyon, France, May 30 - June 03, 2022. (<b>Acceptance rate 25.9%, 123/474, Best Paper Nomination</b>)
-      </p>
-      <p>
-      <p>
-      [9] Steil, T., <b>Reza, T.</b>, Iwabuchi, K., Priest, B., Sanders, G., and Pearce, R. Computing Surveys of Triangles in Massive-scale Temporal Graphs with Metadata. In Proceedings of The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC’21</b>), 14 - 19 November, 2021. (<b>Acceptance rate 23.6%, 86/365</b>)
-      </p>
-      <p>
-      <p>
-      [8] Aasawat, T., <b>Reza, T.</b>, Yoshizoe, K., and Ripeanu, M. HyGN: Hybrid Graph Engine for NUMA. In Proceedings of The IEEE International Conference on BigData (<b>BigData’20</b>), 10 - 13 December, 2020. (<b>Acceptance rate 16.4% for eight page papers</b>)
-      </p>
-      <p>
-      [7] <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. Approximate Pattern Matching in Distributed Graphs with Precision and Recall Guarantees. In Proceedings of The ACM SIGMOD International Conference on Management of Data (<b>SIGMOD'20</b>), Portland, Oregon, 14 - 19 June, 2020. (<b>Acceptance rate 22.3%</b>)
-      </p>
+<hr id="awards_honors" style="margin: 32px 0 32px 0; border: none;">
 
-      <p>
-      <!--[6] <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. A Quantum Leap in Scalable Pattern Matching on Massive Metadata Graphs. In Proceedings of The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'18</b>), Dallas, Texas, 11 - 16 November, 2018. (<b>Acceptance rate 19%</b>)-->
-      [6] <b>Reza, T.</b>, Ripeanu, M., Tripoul, N., Sanders, G., and Pearce, R. PruneJuice: Pruning Trillion-edge Graphs to a Precise Pattern-Matching Solution. In Proceedings of The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'18</b>), Dallas, Texas, 11 - 16 November, 2018. (<b>Acceptance rate 19%, 55/288</b>)
-      </p> 
-      <p>
-      [5] <b>Reza, T.</b>, Klymko, C., Ripeanu, M., Sanders, G., and Pearce, R. Towards Practical and Robust Labeled Pattern Matching in Trillion-Edge Graphs. In Proceedings of The 19th IEEE International Conference on Cluster Computing (<b>Cluster'17</b>), Honolulu, Hawaii, 05 - 08 September, 2017. (<b>Acceptance rate 21.8%, 47/216, Best Paper Nomination</b>)
-      </p> 
-      <p>
-      [4]	<b>Reza, T.</b>, Zimmer, A., Ghuman, P., Aasawat, T., and Ripeanu, M. Accelerating Persistent Scatterer Pixel Selection for InSAR Processing. In Proceedings of The 26th IEEE International Conference on Application-specific Systems, Architectures and Processors (<b>ASAP’15</b>), Toronto, Ontario, 27 - 29 July, 2015. (<b>Acceptance rate 24.7%, 21/85</b>)
-      </p>
-      <p>
-      [3]	<b>Reza, T.</b>, Lamothe, G., Barbeau, M. and Alsubaihi, B. Non-cooperating Vehicle Tracking in VANETs Using the Conditional Logit Model. In Proceedings of The 16th IEEE Conference on Intelligent Transport Systems (ITSC’13), Hague, Netherlands, pp. 626 – 633, 06 - 09 October, 2013.
-      </p>
-      <p>
-      [2]	<b>Reza, T.</b>, Barbeau, M. and Alsubaihi, B. Tracking an ‘on the run vehicle’ in a metropolitan VANET. In Proceedings of The IEEE Intelligent Vehicles Symposium (IV'13), Gold Coast, Australia, pp. 220 – 227, 23 - 26 June, 2013.
-      </p>
-      <p>
-      [1]	<b>Reza, T.</b> and Barbeau, M. QoS Aware Adaptive Security Scheme for Video Streaming in MANETs. In Proceedings of The 5th International Symposium on Foundations & Practice of Security (FPS'12), Montreal, Quebec, pp. 324 – 240, 25 - 26 October, 2012. (<b>Best Paper Nomination</b>)
-      </p>
+<div id="" class="section_title">Key Research Awards and Honors</div>
+<p>
+  <div>&#9632; Award - 
+    <a target="_blank" rel="noopener noreferrer" href="https://www.nserc-crsng.gc.ca/Students-Etudiants/PD-NP/PDF-BP_eng.asp">Natural Sciences and Engineering Research Council of Canada (NSERC) Postdoctoral Fellowship</a> 
+    <a target="_blank" rel="noopener noreferrer" href="https://www.nserc-crsng.gc.ca/NSERC-CRSNG/FundingDecisions-DecisionsFinancement/ScholarshipsAndFellowships-ConcoursDeBourses/CanadianAppDetail-DetailCanCanadien_eng.asp?Inst=British%20Columbia&Year=2020">(2020)</a></div> 
+  <div>&#9632; Best paper nomination - <a target="_blank" rel="noopener noreferrer" href="https://ssl.linklings.net/conferences/ipdps/ipdps2022_program/views/at_a_glance.html">The 36th IEEE International Parallel Distributed Processing Symposium (IPDPS'22)</a></div> 
+  <div>&#9632; Best paper nomination - <a target="_blank" rel="noopener noreferrer" href="https://clustercomp.org/2017/program/">The 19th IEEE International Conference on Cluster Computing (CLUSTER'17)</a></div>
+</p> 
 
-    <p><div><u>Workshop and Poster</u></div></p>
-      <p>
-      [8] <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. Labeled Triangle Indexing for Efficiency Gains in Distributed Interactive Subgraph Search. In Proceedings of The 10th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'20</b>), co-located with SC'20, 11 November, 2020.
-      </p>
-      <p>
-      [7] <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. Towards Interactive Pattern Search in Massive Graphs. In Proceedings of The 3rd Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA) (<b>GRADES-NDA'20</b>), Portland, Oregon, 14 June, 2020.
-      </p>
-      <p>
-      [6]       Tripoul, N., Halawa, H., <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. There are Trillions of Little Forks in the Road. Choose Wisely! - Estimating the Cost and Likelihood of Success of Constrained Walks to Optimize a Graph Pruning Pipeline. In Proceedings of The 8th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'18</b>), co-located with SC'18, Dallas, Texas, 11 - 16 November, 2018.
-      </p>
-      <p>
-      [5]       Aasawat, T., <b>Reza, T.</b>, and Ripeanu, M. Scale-Free Graph Processing on a NUMA Machine. In Proceedings of The 8th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'18</b>), co-located with SC'18, Dallas, Texas, 11 - 16 November, 2018.
-      </p>
-      <p>
-      [4]       <b>Reza, T.</b> and Ripeanu, Pattern Matching in Massive Metadata Graphs at Scale. <b>Doctoral Showcase</b>. In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC’18</b>), Dallas, Texas, 11 - 16 November, 2018. 
-      </P>
-      <p>
-      [3]       Aasawat, T., <b>Reza, T.</b>, and Ripeanu, M. How well do CPU, GPU and Hybrid Graph Processing Frameworks Perform? In Proceedings of The 4th IEEE International Workshop on High-Performance Big Data, Deep Learning, and Cloud Computing (HPBDC'18), co-located with IPDPS'18, Vancouver, British Columbia, 21 May, 2018. 
-      </p>
-      <p>
-      [2]       <b>Reza, T.</b>, Mukherjee, D., and Ripeanu, M. Efficient GPU Techniques for Processing Temporally Correlated Satellite Image Data. Poster. In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC’15</b>), Austin, Texas, 15 - 20 November, 2015. 
-      </P>
-      <p>
-      [1]	<b>Reza, T.</b>, Aasawat, T., and Ripeanu, M. Parallel Clustering Coefficient Computation using GPUs. Poster. In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC’14</b>), New Orleans, Louisiana, 16 - 21 November, 2014.
-      </p> 
+<hr id="self_publication_all" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
 
-      <p><div><u>Technical Report</u>, <u>Magazine</u> </div></p>
-      <p>
-      [1] Baranzini, S., Börner, K., Morris, J., Nelson, C., Soman, K., Schleimer, E., Keiser, M., Musen, M., Pearce, R., <b>Reza, T.</b>, Smith, B., Herr II, B., Oskotsky, B., Rizk-Jackson, A., Rankin, K., Sanders, S., Bove, R., Rose, P., Israni, S., an Huang, S. A Biomedical Open Knowledge Network Harnesses the Power of AI to Understand Deep Human Biology. AI Magazine, 43(1), pp. 46-58, May 2022.
-      </p>
-      <p>
-      [2] Gharaibeh, A., <b>Reza, T.</b>, Santos-Neto, E., Beltrão Costa, L., Sallinen, S., and Ripeanu. M. Efficient Large-Scale Graph Processing on Hybrid CPU and GPU Systems, Technical Report, December, 2014, Electrical and Computer Engineering, The University of British Columbia.
-      </p>
-  
-    <p><div><b>Industry Experiences</b></div></p>
-    <p>
-      <p>
-      [1] Lawrence Livermore National Laboratory (LLNL), Livermore, California - Distributed computing, graph-based analytics.   
-      </p>
-      <p>
-      [2] 3vGeomatics (3vG), Vancouver, British Columbia - Accelerating kernels in the InSAR processing chain on multi-core CPUs and GPUs.  
-      </p>
-      <p>
-      [3] Canadian Controlled Media Communications (CCMC), Toronto, Ontario - Web application development.
-      </p>
-      <p>
-      [4] Research in Motion (RIM)/BlackBerry, Waterloo, Ontario - BlackBerry Java API/SDK: SV&V and test automation. 
-      </p> 
-      <p>
-      [5] GlobalTrade Corporation (GTC), Toronto, Ontario - JEE software developement (Trade-financial services).
-      </p>
-      <p>
-      [6] edCetra Training, Toronto, Ontario - Web application development.
-      </p>
-      <p>
-      [7] Thinking-IT, Toronto, Ontario - Web application development. 
-      </p>
-    </p> 
+<div>
+<span id="" class="section_title">Publications</span>
+<span>
+  <a style="font-size: normal; padding: 8px;" href="http://netsyslab.ece.ubc.ca/wiki/index.php/Publications">NetSysLab, UBC</a>  
+  <a style="font-size: normal; padding: 0;" href="https://scholar.google.com/citations?user=OMgANTcAAAAJ&hl=en">Google Scholar</a> 
+</span>
+</div>
+
+<div class="subsection_title">Journal</div>
+
+<p>
+[1] 
+<a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/journal/journal-of-parallel-and-distributed-computing">Distributed Approximate Minimal Steiner Trees with Millions of Seed Vertices on Billion-Edge Graphs.</a>
+<b>Reza, T.</b>, Steil, T., Sanders, G., and Pearce, R. 
+The Journal of Parallel and Distributed Computing (<b>JPDC</b>), Elsevier B.V. 
+(Submitted August, 2022.) 
+</p>
+
+<p>
+[2] 
+<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/1912.08453.pdf">Scalable Pattern Matching in Metadata Graphs via Constraint Checking.</a>
+<b>Reza, T.</b>, Halawa, H., Ripeanu, M., Sanders, G., and Pearce, R.  
+ACM Transactions on Parallel Computing (<b>TOPC</b>), 8(1), April, 2021. 
+(Submitted November, 2018. Accepted August, 2020.)
+</p>
+
+<p>
+[3] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1bFFu4TV8D1JRP2zFUSPNjTr3VlfteyLY/view?usp=sharing">PtSel: Accelerating Persistent Scatterer Pixel Selection for InSAR Processing.</a>
+<b>Reza, T.</b>, Zimmer, A., Delgado Blasco, J., Ghuman, P., Aasawat, T. and Ripeanu, M.  
+IEEE Transaction on Parallel and Distributed Systems (<b>TPDS</b>), 29(1), 16 - 30, January, 2018. 
+(Accepted May, 2017.)  
+</p>
+
+<p>  
+[4] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZN0J5OEo4MFBIaXM/view?usp=sharing">QaASs: QoS Aware Adaptive Security Scheme for Video Streaming in MANETs.</a>
+<b>Reza, T.</b> and Barbeau, M. 
+Journal of Information Security and Applications (JISA), 18(1), 68 – 82, July, 2013, Elsevier Ltd.
+</p>     
+
+<div class="subsection_title">Conference</div>
+
+<p>
+[5] 
+<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2205.14503.pdf"> Towards Distributed 2-Approximation Steiner Minimal Trees in Billion-edge Graphs.</a>
+<b>Reza, T.</b>, Sanders, G., and Pearce, R.  
+In Proceedings of The 36th IEEE International Parallel and Distributed Processing Symposium (<b>IPDPS'22</b>), Lyon, France, 30 May - 03 June, 2022. 
+(<b>Acceptance rate 25.9%, 123/474, <span class="font_color_blue">Best Paper Nomination</span></b>)
+</p>
+
+<p>
+[6]
+<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2107.12330.pdf">Computing Surveys of Triangles in Massive-scale Temporal Graphs with Metadata.</a> 
+Steil, T., <b>Reza, T.</b>, Iwabuchi, K., Priest, B., Sanders, G., and Pearce, R.  
+In Proceedings of The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'21</b>), 14 - 19 November, 2021. 
+(<b>Acceptance rate 23.6%, 86/365</b>)
+</p>
+
+<p>
+[7] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PmifXWlTPiVlXQtSe9jp3CrYzCoUGtZV/view?usp=sharing">HyGN: Hybrid Graph Engine for NUMA.</a>
+Aasawat, T., <b>Reza, T.</b>, Yoshizoe, K., and Ripeanu, M.  
+In Proceedings of The IEEE International Conference on BigData (<b>BigData'20</b>), 10 - 13 December, 2020. 
+(<b>Acceptance rate 16.4% for eight page papers</b>)
+</p>
+
+<p>
+[8] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1ZCZGAKdaOhQf_dbbHUsPjrYSKP5NYmCT/view?usp=sharing">Approximate Pattern Matching in Distributed Graphs with Precision and Recall Guarantees.</a>
+<b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R.  
+In Proceedings of The ACM SIGMOD International Conference on Management of Data (<b>SIGMOD'20</b>), Portland, Oregon, 14 - 19 June, 2020. 
+(<b>Acceptance rate 22.3%</b>)
+</p>
+
+<p>
+[9] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vSMQQ8BSu202JchPNnf7A02clh7KsdF_/view?usp=sharing">PruneJuice: Pruning Trillion-edge Graphs to a Precise Pattern-Matching Solution.</a>
+<b>Reza, T.</b>, Ripeanu, M., Tripoul, N., Sanders, G., and Pearce, R.  
+In Proceedings of The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'18</b>), Dallas, Texas, 11 - 16 November, 2018. 
+(<b>Acceptance rate 19%, 55/288</b>)
+</p> 
+
+<p>
+[10] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1xOyC9l3KhbGuqsY4GjfMByWXqEpd77SL/view?usp=sharing">Towards Practical and Robust Labeled Pattern Matching in Trillion-Edge Graphs.</a> 
+<b>Reza, T.</b>, Klymko, C., Ripeanu, M., Sanders, G., and Pearce, R. 
+In Proceedings of The 19th IEEE International Conference on Cluster Computing (<b>CLUSTER'17</b>), Honolulu, Hawaii, 05 - 08 September, 2017. 
+(<b>Acceptance rate 21.8%, 47/216, <span class="font_color_blue">Best Paper Nomination</span></b>)
+</p> 
+
+<p>
+[11]	
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZd3VhZU1oUDNwbHM/view?usp=sharing">Accelerating Persistent Scatterer Pixel Selection for InSAR Processing.</a> 
+<b>Reza, T.</b>, Zimmer, A., Ghuman, P., Aasawat, T., and Ripeanu, M. 
+In Proceedings of The 26th IEEE International Conference on Application-specific Systems, Architectures and Processors (<b>ASAP'15</b>), Toronto, Ontario, 27 - 29 July, 2015. 
+(<b>Acceptance rate 24.7%, 21/85</b>)
+</p>
+
+<p>
+[12]	
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZQkVyb3JySVByT1k/view?usp=sharing">Non-cooperating Vehicle Tracking in VANETs Using the Conditional Logit Model.</a>
+<b>Reza, T.</b>, Lamothe, G., Barbeau, M. and Alsubaihi, B.  
+In Proceedings of The 16th IEEE Conference on Intelligent Transport Systems (ITSC'13), Hague, Netherlands, pp. 626 – 633, 06 - 09 October, 2013.
+</p>
+
+<p>
+[13]	
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZTFVZaTFpRWl4YnM/view?usp=sharing">Tracking an ‘on the run vehicle' in a metropolitan VANET.</a> 
+<b>Reza, T.</b>, Barbeau, M. and Alsubaihi, B. 
+In Proceedings of The IEEE Intelligent Vehicles Symposium (IV'13), Gold Coast, Australia, pp. 220 – 227, 23 - 26 June, 2013.
+</p>
+
+<p>
+[14]	
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZMWtpU0Nxenk0QTg/view?usp=sharing">QoS Aware Adaptive Security Scheme for Video Streaming in MANETs.</a>
+<b>Reza, T.</b> and Barbeau, M. 
+In Proceedings of The 5th International Symposium on Foundations & Practice of Security (FPS'12), Montreal, Quebec, pp. 324 – 240, 25 - 26 October, 2012. 
+<!--(<b><span class="font_color_red">Best Paper Nomination</span></b>)-->
+</p>
+
+<div class="subsection_title">Workshop</div>
+
+<p>
+[15] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1DgQBwok7POzzro7VKd4mUXwUYDLf7YYL/view?usp=sharing">Labeled Triangle Indexing for Efficiency Gains in Distributed Interactive Subgraph Search.</a>
+<b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R.  
+In Proceedings of The 10th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'20</b>), co-located with SC'20, 11 November, 2020.
+</p>
+
+<p>
+[16] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1nRft16VtvjWCxE_9dadHHVzoDKXEmtV9/view?usp=sharing">Towards Interactive Pattern Search in Massive Graphs.</a>
+<b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R.  
+In Proceedings of The 3rd Joint International Workshop on Graph Data Management Experiences & Systems (GRADES) and Network Data Analytics (NDA) (<b>GRADES-NDA'20</b>), Portland, Oregon, 14 June, 2020.
+</p>
+
+<p>
+[17]       
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vJ0EAy0ZH8K1Zg8ONBezlD7lzi9EAJM-/view?usp=sharing">There are Trillions of Little Forks in the Road. Choose Wisely! - Estimating the Cost and Likelihood of Success of Constrained Walks to Optimize a Graph Pruning Pipeline.</a>
+Tripoul, N., Halawa, H., <b>Reza, T.</b>, Ripeanu, M., Sanders, G., and Pearce, R. 
+In Proceedings of The 8th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'18</b>), co-located with SC'18, Dallas, Texas, 11 - 16 November, 2018.
+</p>
+
+<p>
+[18]       
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1oC5nPNBtvgLQrlvSfg6ryjksNRShmrUr/view?usp=sharing">Scale-Free Graph Processing on a NUMA Machine.</a> 
+Aasawat, T., <b>Reza, T.</b>, and Ripeanu, M. 
+In Proceedings of The 8th Workshop on Irregular Applications: Architectures and Algorithms (<b>IA^3'18</b>), co-located with SC'18, Dallas, Texas, 11 - 16 November, 2018.
+</p>
+
+<p>
+[19]       
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rHgJ9Nq2w-0MbZ-7oXQRgroqZNAT_5gs/view?usp=sharing">How well do CPU, GPU and Hybrid Graph Processing Frameworks Perform?</a>
+Aasawat, T., <b>Reza, T.</b>, and Ripeanu, M.  
+In Proceedings of The 4th IEEE International Workshop on High-Performance Big Data, Deep Learning, and Cloud Computing (HPBDC'18), co-located with IPDPS'18, Vancouver, British Columbia, 21 May, 2018. 
+</p>
+
+<div class="subsection_title">Poster, Research Showcase</div>  
+
+<p>
+[20]  
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1E9wS1OfRZZDTJUdesgUbGhK9LEAqIAPE/view?usp=sharing">Accelerating BFS and SSSP on a NUMA machine for the Graph500 Challenge. </a>
+Aasawat, T., Yoshizoe, K., <b>Reza, T.</b>, and Ripeanu, M.
+The IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'19</b>), Denver, Colorado, 17 – 22 November, 2019.
+</p>
+
+<p>
+[21] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1t9hEz4WUnHYJOITCAQIwdqUtrVhSNkHW/view?usp=sharing">Pattern Matching in Massive Metadata Graphs at Scale.</a>       
+<b>Reza, T.</b> and Ripeanu, M. 
+Doctoral Showcase. 
+In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'18</b>), Dallas, Texas, 11 - 16 November, 2018. 
+</P>
+
+<p>
+[22]       
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZTHBVZzJxUGpiYW8/view?usp=sharing">Efficient GPU Techniques for Processing Temporally Correlated Satellite Image Data.</a>
+<b>Reza, T.</b>, Mukherjee, D., and Ripeanu, M.  
+In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'15</b>), Austin, Texas, 15 - 20 November, 2015. 
+</P>
+
+<p>
+[23] 
+<a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZbV83V014UXVBaXM/view?usp=sharing">Parallel Clustering Coefficient Computation using GPUs.</a>
+<b>Reza, T.</b>, Aasawat, T., and Ripeanu, M. 
+In IEEE/ACM International Conference for High Performance Computing, Networking, Storage, and Analysis (<b>SC'14</b>), New Orleans, Louisiana, 16 - 21 November, 2014.
+</p> 
+
+<div class="subsection_title">Technical Report, Magazine</div>
+
+<p>
+[24]
+<a target="_blank" rel="noopener noreferrer" href="https://ojs.aaai.org/index.php/aimagazine/article/view/19125">A Biomedical Open Knowledge Network Harnesses the Power of AI to Understand Deep Human Biology.</a> 
+Baranzini, S., Börner, K., Morris, J., Nelson, C., Soman, K., Schleimer, E., Keiser, M., Musen, M., Pearce, R., <b>Reza, T.</b>, Smith, B., Herr II, B., Oskotsky, B., Rizk-Jackson, A., Rankin, K., Sanders, S., Bove, R., Rose, P., Israni, S., an Huang, S.  
+AI Magazine, 43(1), pp. 46-58, May, 2022.
+</p>
+
+<p>
+[25] 
+<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/ftp/arxiv/papers/1312/1312.3018.pdf">Efficient Large-Scale Graph Processing on Hybrid CPU and GPU Systems.</a>
+Gharaibeh, A., <b>Reza, T.</b>, Santos-Neto, E., Beltrão Costa, L., Sallinen, S., and Ripeanu. M. 
+Technical Report, NetSysLab, Electrical and Computer Engineering, The University of British Columbia, December, 2014. 
+</p>
+
+<hr id="research_projects" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
+
+<div id="" class="section_title">Recent Research Projects</div>
+
+<div class="subsection_title">Accelerating Neural Architecture Search</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="https://computation.llnl.gov/casc/">CASC, LLNL</a> | 
+  Papers - WIP
+</div>
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Neural_architecture_search">Neural Architecture Search (NAS)</a> is a high-impact machine learning problem area that focuses on automating the task of identifying high-quality models. NAS solutions are compute intensive - often thousands of models are trained and evaluated. To speed up the search process, low overhead model quality estimation is considered an attractive alternative to spending a prolonged duration in model training and validation. We have developed a graph-centric approach for approximating model quality: a cheap to compute quality metric that, within a NAS workflow, can be used as a direct substitute for model validation accuracy. We use a graph representation of the architecture model that captures co-occurrences of universal model building blocks. Through sampling and validating a small number of models, we co-relate graph features (related to model building blocks) to ground truth model quality. Later, we approximate the quality of a new model based on these weighted graph features. We implement our solution by extending the <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Neuroevolution">neuroevolution</a>-based framework <a target="_blank" rel="noopener noreferrer" href="https://github.com/ianwhale/nsga-net">NSGANet</a>. Evaluation using multiple computer vision datasets, including CIFAR-10, CIFAR-100, and several <a target="_blank" rel="noopener noreferrer" href="https://github.com/rtu715/NAS-Bench-360">NAS-Bench-360</a> shows that our approach can speed up architecture search by up to 6x over NSGANet, while identifying models with comparable quality. Also, we extend NSGANet to scale out the architecture search task using MPI.</p>
+
+<div class="subsection_title">Distributed Steiner Tree Computation</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="https://computation.llnl.gov/casc/">CASC, LLNL</a> | 
+  Papers - 
+  <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/journal/journal-of-parallel-and-distributed-computing">[JPDC'22 under review]<a>,  
+  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/2205.14503.pdf">[IPDPS'22]</a>
+</div>
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Steiner_tree_problem">Steiner Tree</a> computation has direct applications to VLSI design, communication network optimization, systems biology, and knowledge discovery and management. Given a set of seed vertices of an edge-weighted graph, a Steiner minimal tree is an acyclic subgraph that connects the seed vertices while minimizing its distance - the sum of edge weights of the resulting tree. Finding a Steiner minimal tree of a graph and arbitrary seed vertices is an NP-hard problem. Therefore, polynomial time algorithms for finding a tree with a distance close to the distance of a Steiner minimal tree are popular due to their practical relevance. We have developed a distributed <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Steiner_tree_problem#Approximating_the_Steiner_tree">2-approximate Steiner minimal tree</a> solution and demonstrated scalability using up to a hundred-billion edge web graph, millions of seed vertices and 512 compute nodes. In place of distance computation between all pairs of seed vertices, an expensive phase in many 2-approximate algorithms, our solution exploits Voronoi cell computation. Also, this approach offers higher parallel efficiency than related works that perform minimum spanning tree computation on the entire data-graph. We provide theoretical guarantees of the approximation bound of our solution and empirical evidence supporting these guarantees.</p>
+
+<div class="subsection_title">Distributed Subgraph Matching</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="http://netsyslab.ece.ubc.ca">NetSysLab, UBC</a> and <a target="_blank" rel="noopener noreferrer" href="https://computation.llnl.gov/casc/">CASC, LLNL</a> | 
+  Code - 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/LLNL/havoqgt/tree/develop_prunejuice/examples/prunejuice">PruneJuice</a> |
+  Papers - 
+  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/pdf/1912.08453.pdf">[TOPC'21]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1DgQBwok7POzzro7VKd4mUXwUYDLf7YYL/view?usp=sharing">[IA^3'20]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1ZCZGAKdaOhQf_dbbHUsPjrYSKP5NYmCT/view?usp=sharing">[SIGMOD'20]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1nRft16VtvjWCxE_9dadHHVzoDKXEmtV9/view?usp=sharing">[GRADES-NDA'20]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vSMQQ8BSu202JchPNnf7A02clh7KsdF_/view?usp=sharing">[SC'18]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vJ0EAy0ZH8K1Zg8ONBezlD7lzi9EAJM-/view?usp=sharing">[IA^3'18]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1xOyC9l3KhbGuqsY4GjfMByWXqEpd77SL/view?usp=sharing">[CLUSTER'17]</a>
+</div>
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Subgraph_isomorphism_problem">Subgraph matching</a> is a key algorithmic technique enabling fine-grained analyses of a graph's local structure - fundamental to answering pattern queries in <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Graph_database">graph databases</a>. Exact subgraph matching poses various scalability challenges: the problem does not have a know polynomial time solution, skewed match distribution makes load balanced processing difficult. We have developed a novel algorithmic pipeline which enables distributed subgraph matching in massive labeled graphs. This work is the first to show that it is much cheaper in practice to first reduce a large graph to the solution subgraph – the union of all vertices and edges that participate in at least one match of the query subgraph; match enumeration is also cheaper in practice in the reduced solution subgraph. First, we present a general solution for exact subgraph matching that, (a) is highly scalable in practice, (b) supports arbitrary labeled subgraph queries, and (c) offers message and memory efficiency. Then, we show that this graph reduction approach lends itself well to efficiently solve a class of edit-distance subgraph matching and human-in-the-loop incremental subgraph search problems. This work has resulted in an open source software artifact, PruneJuice, which has been used internally at LLNL and by academic research groups. We demonstrated advantages of this solution approach through strong and weak scaling experiments on massive-scale real-world (up to 127 billion edges) and synthetic (up to 2.2 trillion edges) graphs, respectively, and at scales (up to 1,024 nodes or 36,864 cores), orders of magnitude larger than used in the past for similar problems.
+Currently we are working on extending the graph reduction principles of PruneJuice to efficiently support <a target="_blank" rel="noopener noreferrer" href="https://neo4j.com/developer/graph-database/?ref=blog#why-graphdb">property graphs</a> with arbitrary vertex and edge attributes.</p>
+
+<div class="subsection_title">Middleware for Distributed Platforms with Fast Interconnect</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="https://computation.llnl.gov/casc/">CASC, LLNL</a> |
+  Code - 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/LLNL/ygm">YGM</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://bitbucket.org/berkeleylab/upcxx/wiki/Home">UPC++</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/tahsinreza/upcxx-benchmark">UPC++ benchmarks</a>
+</div>
+
+<p>YGM is a C++ communication library developed at LLNL. YGM offers a high-level API for implementing distributed algorithms on top of its asynchronous Remote Procedure Call (RPC) engine. YGM employs advanced message buffering for improving bandwidth utilization, thus, throughput, in MPI-based communication. We are actively working on extending API features and improving performance under irregular workloads and communication patterns. We have multiple projects in the pipeline that use YGM for distributed messaging.</p>
+
+<p>UPC++ is a <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Partitioned_global_address_space">Partitioned Global Address Space (PGAS)</a> library for implementing distributed algorithms. UPC++ offers APIs for both one-sided Remote Memory Access (RMA) and RPC. UPC++ offers true one-sided RMA communication (to the global address space) and fire-and-forget RPCs. UPC++ supports multiple low-level protocols for different network architectures, e.g., <a target="_blank" rel="noopener noreferrer" href="https://docs.nvidia.com/networking/display/RDMAAwareProgrammingv17/Programming+Examples+Using+IBV+Verbs">InfiniBand Verbs (IBV)</a>, <a target="_blank" rel="noopener noreferrer" href="https://ofiwg.github.io/libfabric/">OpenFabrics Interfaces (OFI)</a> and UDP. We thoroughly evaluated UPC++ to understand its performance offerings for our target applications. We have developed a number of benchmark applications and evaluated them using 100+ compute nodes on distributed platforms with both Mellanox EDR Infiniband and Intel Omni-Path networks.</p>
+
+<div class="subsection_title">Graph-based Reasoning of Biomedical Data</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="https://computation.llnl.gov/casc/">CASC, LLNL</a> and 
+  <a target="_blank" rel="noopener noreferrer" href="https://weill.ucsf.edu/">Weill, UCSF</a> |
+  Paper -
+  <a target="_blank" rel="noopener noreferrer" href="https://ojs.aaai.org/index.php/aimagazine/article/view/19125">[AI Magazine'22]</a> 
+</div>
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://spoke.ucsf.edu/">SPOKE</a> is a multi-institutional NFS funded effort for representation and reasoning of a biomedical knowledge network. The SPOKE network is a property graph constructed from (and evolving) 30+ human-validated sources, e.g., molecule, genome and (anonymized) patient clinical datasets. The goal is to exploit this vast relational knowledge repository for reasoning research questions in health sciences, as well as application areas such as insights in understanding diseases, discovering and repurposing drugs. To date, our contributions include in-depth analysis of various topological properties (e.g., network diameter and centrality measures), and discovery of <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Metabolic_pathway">metabolic paths</a> (e.g., between a set of genes) and subgraphs of interest identified by domain experts. Also, we are investigating novel techniques (e.g., Steiner tree computation and similar techniques) for discovering causal relationships between genes and diseases to help domain experts understand role of genes in diseases.</p>
+
+<!--<div class="subsection_title">Scalable Graph Traversal on NUMA Platforms</div>-->
+<div class="subsection_title">Optimized Graph Processing on NUMA and GPU-equipped Shared Memory Platforms</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="http://netsyslab.ece.ubc.ca">NetSysLab, UBC</a> | 
+  Code -   
+  <a target="_blank" rel="noopener noreferrer" href="http://netsyslab.ece.ubc.ca/wiki/index.php/Totem">Totem</a> |
+  Papers -
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PmifXWlTPiVlXQtSe9jp3CrYzCoUGtZV/view?usp=sharing">[BigData'20]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1oC5nPNBtvgLQrlvSfg6ryjksNRShmrUr/view?usp=sharing">[IA^3'18]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1rHgJ9Nq2w-0MbZ-7oXQRgroqZNAT_5gs/view?usp=sharing">[IEEE HPBDC'18]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/ftp/arxiv/papers/1312/1312.3018.pdf">[NetSysLab Technical Report'14]</a>
+</div>
+
+<p>This is a large effort by the NetSysLab at UBC towards building general purpose graph processing solutions optimized for modern shared memory platforms. Most recently, we characterized parallel graph traversal algorithms and studied design trade-offs of key solutions on Non-Uniform Memory Access (NUMA) platforms. Lessons learned from our investigations led to the development of HyGN - a graph engine that marries, (a) distributed, shared-nothing designs (e.g., data partitioning) with shared memory features (e.g., byte addressing), and (b) unique advantages of synchronous and asynchronous processing within the same computation task, towards offering superior performance and scalability on NUMA platforms. Using popular benchmarks, we demonstrate that HyGN comfortably outperforms state-of-the-art NUMA-oblivious solutions, achieves maximum 97% efficient scaling on a four-socket NUMA machine. 
+
+Totem is an in-memory graph processing framework, which leverages both CPUs and GPUs of a shared memory platform. Within Totem, a graph is partitioned and processed simultaneously on CPUs and GPUs. <!--Graph algorithms benefits from a GPU's superior memory bandwidth, however, demand load-balanced processing to fully exploit a GPU's performance potential.--> 
+Totem has been widely used by researchers for performance comparison. To date, work resulting from both projects won several <a target="_blank" rel="noopener noreferrer" href="https://graph500.org">Graph 500</a> awards in the small and medium size dataset category. <!--In Totem, one of my key contributions is developing the CPU-GPU hybrid Single Source Shortest Path (SSSP) algorithm that offers performance comparable to the state-of-the-art and subsequently won a <a target="_blank" rel="noopener noreferrer" href="https://graph500.org">Graph 500</a> award in 2019 in the small and medium size dataset category.-->
+</p>
+
+<div class="subsection_title">Accelerating InSAR data Processing using GPUs</div>
+<div>
+  <a target="_blank" rel="noopener noreferrer" href="http://netsyslab.ece.ubc.ca">NetSysLab, UBC</a> and 
+  <a target="_blank" rel="noopener noreferrer" href="http://www.3vgeomatics.com/">3vGeomatics</a> |
+  Papers -
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1bFFu4TV8D1JRP2zFUSPNjTr3VlfteyLY/view?usp=sharing">[TPDS'18]</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/0B62g_9gWmpsZd3VhZU1oUDNwbHM/view?usp=sharing">[IEEE ASAP'15]</a>
+</div>
+
+<p>One of the applications of the remote sensing technology <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Interferometric_synthetic-aperture_radar">Interferometric Synthetic Aperture Rader (InSAR)</a> is monitoring displacement of a natural or artificial structure on the earth's surface over time. Modern SAR satellites produce higher resolution sensor data leading to orders of magnitude increase in volume of accumulated data, and therefore, the demand for superior computing capabilities for timely processing of these large datasets (tens of terabytes). We engineered and implemented a <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1029/2006JB004763">Persistent Scatterer</a> selection kernel in the InSAR processing chain for Nvidia GPUs: on four commodity GPUs, it offers 65x speedup over a four socket, 60-core Intel Xeon platform. Also, this work presents a detailed characterization of the target problem under different workloads, and demonstrates, effectiveness of the design choices to improve parallelism and GPU utilization, while avoiding redundant computations.</p>
+
+<!--<div id="research_projects" class="section_title">Recent Research Projects</div>
+<p>  
+  <p>[1] Accelerating Neural Architecture Search by analyzing computational graphs of models.</p>
+  <p>[2] Distributed communication beyond MPI.</p>
+  <p>[3] Graph analysis of the <a href="https://spoke.ucsf.edu/">SPOKE</a> knowledge network.</p>
+  <p>[4] Distributed Steiner Tree, connection subgraph computation.</p>
+  <p>[5] Distributed subgraph queries on property graphs.</p> 
+  <p>[6] Graph Neural Network for learning subgraphs.</p> 
+  <p>[7] Distributed subgraph matching (in collaboration with <a href="https://computation.llnl.gov/casc/">CASC, LLNL</a>) 
+  <a href="https://github.com/LLNL/havoqgt/tree/develop_prunejuice/examples/prunejuice">GitHub</a></p>
+  <p>[8] Accelerating kernels in the radar-satellite image processing chain (in collaboration with <a href="http://www.3vgeomatics.com/">3vGeomatics</a>).</p> 
+  <p>[9] <a href="http://netsyslab.ece.ubc.ca/wiki/index.php/Totem">Totem</a> - A graph-processing framework that leverages CPU-GPU hybrid platforms. 
+  <a href="https://github.com/netsyslab/Totem">GitHub</a></p>      
+</p>-->
+
 </body>
 </html>
-
