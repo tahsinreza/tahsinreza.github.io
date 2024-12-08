@@ -120,10 +120,11 @@
 <div class="menu_bar">
   <a class="menu_item" href="index.html#home">Home</a> 
   <!--<a class="menu_item" href="index.html#education_all">Education</a>-->
-  <a class="menu_item" href="index.html#awards_honors">Awards</a>
+  <!--<a class="menu_item" href="index.html#awards_honors">Awards</a>-->  
   <a class="menu_item" href="index.html#self_publication_all">Publications</a> 
   <!--<a class="menu_item" href="index.html#research_appointments">Research Appointments</a>--> 
   <a class="menu_item" href="index.html#research_projects">Projects</a>
+  <a class="menu_item" href="index.html#research_group">Research Group</a>
   <a class="menu_item" href="index.html#teaching">Teaching</a>
   <a class="menu_item" href="index.html#service">Service</a>
   <hr style="margin: 16px 0 16px 0; border: none; border-top: 1px solid silver;"> 
@@ -143,14 +144,42 @@
     <p>
     I am broadly interested in software technologies for parallel and distributed computing. My research focus is investigating novel systems techniques, both at the application and middleware level, for contemporary and emerging large-scale problems that demand scalable and timely solution. My goal is building performant and scalable yet sustainable systems that harness state-of-the-art massively parallel and large computing platforms, distributed communication, and memory technologies.  
     </p>
-   </div> 
+  </div> 
 </div> 
 
 
 <hr id="open_positions" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
 <div id="" class="section_title">Open Positions</div>
 <p>
-  There are several openings for PhD and MASc students in my research group. If you are interested in working with me, please send an <a style="padding: 0px;" href="mailto:tahsin.reza@uwaterloo.ca">email</a>. Please refer to Electrical and Computer Engineering resources for <a target="_blank" rel="noopener noreferrer" href="https://uwaterloo.ca/electrical-computer-engineering/graduate-students/future-graduate-students">future graduate students</a> for admission requirements and program details.
+  There are several openings for PhD and MASc students in my <a href="index.html#research_group">research group</a>. If you are interested in working with me, please send an <a style="padding: 0px;" href="mailto:tahsin.reza@uwaterloo.ca">email</a>. Please refer to Electrical and Computer Engineering resources for <a target="_blank" rel="noopener noreferrer" href="https://uwaterloo.ca/electrical-computer-engineering/graduate-students/future-graduate-students">future graduate students</a> for admission requirements and program details.
+</p>
+
+
+<hr id="research_group" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
+<div id="" class="section_title">Research Group</div>
+
+<div id="" class="subsection_title">Graduate Students</div>
+<p>
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Guilherme Campos</a>, MASc, ECE (co-advised with Professor Wojciech Golab)
+</p>
+<p>  
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Faraz Awan</a>, MASc, ECE
+</p>
+<p>  
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Kevin Kim</a>, MASc, ECE (starting in Spring 2025)
+</p>
+
+<div id="" class="subsection_title">Research Advising</div>
+<p>
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Akira Yoshiyama</a>, BASc, ECE (NSERC USRA, Spring 2024)
+</p>
+<p>  
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Kevin Lin</a>, BASc, ECE
+</p>
+
+<div id="" class="subsection_title">Alumni</div>
+<p>
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">Vinamra Singh</a>, MEng, ECE, MEng Project, Spring 2024 (co-advised with Professor Ladan Tahvildari)
 </p>
 
 
@@ -464,16 +493,45 @@ Technical Report, NetSysLab, Electrical and Computer Engineering, The University
 
 <hr id="research_projects" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
 
-<div id="" class="section_title">Recent Research Projects</div>
+<div id="" class="section_title">Research Projects</div>
+
+<div class="subsection_title">Scalable Analytics in High-dimensional Data</div>
+<div>  
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">UWaterloo</a> |
+  Code - TBA |
+  Paper - TBA
+</div>
+
+<div class="subsection_title">Distributed Middleware for Data-intensive Workloads</div>
+<div>  
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">UWaterloo</a> |
+  Code - TBA |
+  Paper - TBA
+</div>
 
 <div class="subsection_title">Accelerating Neural Architecture Search</div>
 <div>  
-  <a target="_blank" rel="noopener noreferrer" href="https://computing.llnl.gov/casc/">CASC, LLNL</a> |
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">UWaterloo</a> and <a target="_blank" rel="noopener noreferrer" href="https://computing.llnl.gov/casc/">CASC, LLNL</a> |
   Code - TBA |
-  Paper - Under review
+  Paper - TBA
 </div>
 
 <p><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Neural_architecture_search">Neural Architecture Search (NAS)</a> is a high-impact machine learning problem area that focuses on automating the task of identifying high-quality models. NAS solutions are compute intensive - often thousands of models are trained and evaluated. To speed up the search process, low overhead model quality estimation is considered an attractive alternative to spending a prolonged duration in model training and validation. We have developed a graph-centric approach for approximating model quality: a cheap to compute quality metric that, within a NAS workflow, can be used as a direct substitute for model validation accuracy. We use a graph representation of the architecture model that captures co-occurrences of universal model building blocks. Through sampling and validating a small number of models, we co-relate graph features (related to model building blocks) to ground truth model quality. Later, we approximate the quality of a new model based on these weighted graph features. We implement our solution by extending the <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Neuroevolution">neuroevolution</a>-based framework <a target="_blank" rel="noopener noreferrer" href="https://github.com/ianwhale/nsga-net">NSGANet</a>. Evaluation using multiple computer vision datasets, including CIFAR-10, CIFAR-100, and several <a target="_blank" rel="noopener noreferrer" href="https://github.com/rtu715/NAS-Bench-360">NAS-Bench-360</a> datasets shows that our approach can speed up architecture search by up to 6x over NSGANet, while identifying models with comparable quality. Also, our MPI-based distributed implementation scales out architecture search on distributed GPUs.</p>
+
+<div class="subsection_title">Middleware for Distributed Platforms with Fast Networks</div>
+<div>
+  <a style="pointer-events: none" target="_blank" rel="noopener noreferrer" href="#">UWaterloo</a> and <a target="_blank" rel="noopener noreferrer" href="https://computing.llnl.gov/casc/">CASC, LLNL</a> |
+  Code - 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/LLNL/ygm">YGM</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://bitbucket.org/berkeleylab/upcxx/wiki/Home">UPC++</a>, 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/tahsinreza/upcxx-benchmark">UPC++ benchmarks</a> |
+  Paper - 
+  <a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/pdf/10.1145/3581784.3607103">[SC'23]</a>
+</div>
+
+<p>YGM is a C++ distributed computing library developed at LLNL. YGM offers a high-level API for implementing distributed algorithms on top of its asynchronous Remote Procedure Call (RPC) engine. YGM employs advanced message buffering for improving bandwidth utilization, thus, throughput, in MPI-based communication. We are actively working on extending API features and improving performance under irregular workloads and communication patterns. We have multiple projects in the pipeline that use YGM for distributed messaging.</p>
+
+<p>UPC++ is a <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Partitioned_global_address_space">Partitioned Global Address Space (PGAS)</a> library for implementing distributed algorithms, developed at LBNL. UPC++ provides APIs for both one-sided Remote Memory Access (RMA) and RPC. UPC++ offers true one-sided RMA communication (to the global address space) and fire-and-forget RPCs. UPC++ uses <a target="_blank" rel="noopener noreferrer" href="https://gasnet.lbl.gov">GASNet-EX</a> for distributed messaging and supports multiple low-level protocols for different network architectures, e.g., <a target="_blank" rel="noopener noreferrer" href="https://docs.nvidia.com/networking/display/RDMAAwareProgrammingv17/Programming+Examples+Using+IBV+Verbs">InfiniBand Verbs (IBV)</a>, <a target="_blank" rel="noopener noreferrer" href="https://ofiwg.github.io/libfabric/">OpenFabrics Interfaces (OFI)</a> and UDP. We thoroughly evaluated UPC++ to understand its performance offerings for our target applications. We have developed a number of benchmark applications and evaluated them using 100+ compute nodes (thousands of cores) on distributed platforms with both Mellanox EDR Infiniband and Intel Omni-Path networks.</p>
 
 <div class="subsection_title">Distributed Steiner Tree Computation</div>
 <div>
@@ -502,21 +560,6 @@ Technical Report, NetSysLab, Electrical and Computer Engineering, The University
 
 <p><a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Subgraph_isomorphism_problem">Subgraph matching</a> is a key algorithmic technique enabling fine-grained analysis of a graph's local structures - fundamental to answering pattern queries in <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Graph_database">graph databases</a>. Exact subgraph matching poses various scalability challenges: the problem does not have a know polynomial time solution, skewed graph topology and match distribution makes load balanced processing difficult. We have developed a novel algorithmic pipeline which enables distributed subgraph matching in massive labeled graphs. This work is the first to show that it is much cheaper in practice to first reduce a large graph to the solution subgraph  - the union of all vertices and edges that participate in at least one match of the query subgraph. The solution subgraph directly answers a class of popular graph database queries. Match enumeration is also cheaper in practice in the reduced solution subgraph. First, we present a general solution for exact subgraph matching that, (a) is highly scalable in practice, (b) supports arbitrary labeled subgraph queries, and (c) offers message and memory efficiency. Then, we show that this graph reduction approach lends itself well to efficiently solve a class of edit-distance subgraph matching and human-in-the-loop incremental subgraph search problems. This work has resulted in an open source software artifact, PruneJuice, which has been used internally at LLNL and by academic research groups. We demonstrated advantages of this solution approach through strong and weak scaling experiments on massive-scale real-world (up to 127 billion edges) and synthetic (up to 2.2 trillion edges) graphs, respectively, and at scales (up to 1,024 nodes or 36,864 cores), orders of magnitude larger than used in the past for similar problems.
 Currently we are working on extending the graph reduction principles of PruneJuice to efficiently support <a target="_blank" rel="noopener noreferrer" href="https://neo4j.com/developer/graph-database/?ref=blog#why-graphdb">property graphs</a> with arbitrary vertex and edge attributes.</p>
-
-<div class="subsection_title">Middleware for Distributed Platforms with Fast Networks</div>
-<div>
-  <a target="_blank" rel="noopener noreferrer" href="https://computing.llnl.gov/casc/">CASC, LLNL</a> |
-  Code - 
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/LLNL/ygm">YGM</a>, 
-  <a target="_blank" rel="noopener noreferrer" href="https://bitbucket.org/berkeleylab/upcxx/wiki/Home">UPC++</a>, 
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/tahsinreza/upcxx-benchmark">UPC++ benchmarks</a> |
-  Paper - 
-  <a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/pdf/10.1145/3581784.3607103">[SC'23]</a>
-</div>
-
-<p>YGM is a C++ distributed computing library developed at LLNL. YGM offers a high-level API for implementing distributed algorithms on top of its asynchronous Remote Procedure Call (RPC) engine. YGM employs advanced message buffering for improving bandwidth utilization, thus, throughput, in MPI-based communication. We are actively working on extending API features and improving performance under irregular workloads and communication patterns. We have multiple projects in the pipeline that use YGM for distributed messaging.</p>
-
-<p>UPC++ is a <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Partitioned_global_address_space">Partitioned Global Address Space (PGAS)</a> library for implementing distributed algorithms, developed at LBNL. UPC++ provides APIs for both one-sided Remote Memory Access (RMA) and RPC. UPC++ offers true one-sided RMA communication (to the global address space) and fire-and-forget RPCs. UPC++ uses <a target="_blank" rel="noopener noreferrer" href="https://gasnet.lbl.gov">GASNet-EX</a> for distributed messaging and supports multiple low-level protocols for different network architectures, e.g., <a target="_blank" rel="noopener noreferrer" href="https://docs.nvidia.com/networking/display/RDMAAwareProgrammingv17/Programming+Examples+Using+IBV+Verbs">InfiniBand Verbs (IBV)</a>, <a target="_blank" rel="noopener noreferrer" href="https://ofiwg.github.io/libfabric/">OpenFabrics Interfaces (OFI)</a> and UDP. We thoroughly evaluated UPC++ to understand its performance offerings for our target applications. We have developed a number of benchmark applications and evaluated them using 100+ compute nodes (thousands of cores) on distributed platforms with both Mellanox EDR Infiniband and Intel Omni-Path networks.</p>
 
 <div class="subsection_title">Graph-based Reasoning of Biomedical Data</div>
 <div>
@@ -560,9 +603,13 @@ Totem has been widely used by researchers for performance comparison. To date, w
 <hr id="teaching" style="margin: 32px 0 32px 0; border-top: 1px solid silver">
 
 <div id="" class="section_title">Teaching</div>
-<p>   
-  <div>&#9632; ECE 750 Topics in Computer Software: TBD - Fall 2024</div>
-  <div>&#9632; ECE 454 Distributed Computing - Spring 2024</div>
+
+<div id="" class="subsection_title">University of Waterloo</div>
+<p>
+  <div>&#9632; ECE 750 Special Topics: Scalable Computer System Design - <a target="_blank" rel="noopener noreferrer" href="https://outline.uwaterloo.ca/view/n4fupp">Fall 2025</a></div>
+  <div>&#9632; ECE 454 Distributed Computing - <a target="_blank" rel="noopener noreferrer" href="https://outline.uwaterloo.ca/view/n4yrtu">Spring 2025</a></div>   
+  <div>&#9632; ECE 750 Special Topics: Scalable Computer System Design - <a target="_blank" rel="noopener noreferrer" href="https://outline.uwaterloo.ca/view/n4fupp">Fall 2024</a></div>
+  <div>&#9632; ECE 454 Distributed Computing - <a target="_blank" rel="noopener noreferrer" href="https://outline.uwaterloo.ca/view/n4yrtu">Spring 2024</a></div>
 </p>
 
 
@@ -578,6 +625,7 @@ Totem has been widely used by researchers for performance comparison. To date, w
 <div class="subsection_title">Reviewer - Journal</div>
 <p>     
   <div>&#9632; ACM Transactions on Parallel Computing (TOPC)</div>
+  <div>&#9632; ACM Transactions on Architecture and Code Optimization (TACO)</div>
   <div>&#9632; ACM Computing Surveys</div>
   <div>&#9632; IEEE Transaction on Parallel and Distributed Systems (TPDS)</div>
   <div>&#9632; Journal of Parallel and Distributed Computing (JPDC), Elsevier</div>
